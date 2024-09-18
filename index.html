@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoe Collection</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+
+      .product-grid {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .product-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        text-align: center;
+        padding: 15px;
+        position: relative;
+        transition: transform 0.2s;
+      }
+
+      .product-card:hover {
+        transform: scale(1.05);
+      }
+
+      .product-card img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .new-label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #00b4d8;
+        color: white;
+        padding: 5px 10px;
+        font-size: 12px;
+        border-radius: 5px;
+      }
+
+      .product-details {
+        margin-top: 15px;
+        text-align: left;
+      }
+
+      .product-details h4 {
+        font-size: 16px;
+        margin: 5px 0;
+      }
+
+      .product-details p {
+        font-size: 12px;
+        color: #888;
+      }
+
+      .product-price {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      .icon-heart {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        color: #888;
+        cursor: pointer;
+      }
+
+      .icon-heart:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Featured Shoes</h1>
+
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <span class="new-label">I AM THE NEW</span>
+        <i class="icon-heart">♥</i>
+        <img src="images/shoes1.png" alt="Reebok Women NFX Trainer" />
+        <div class="product-details">
+          <p>TRAINING SHOES</p>
+          <h4>Reebok Women NFX Trainer</h4>
+          <div class="product-price">₹7,599</div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <span class="new-label">I AM THE NEW</span>
+        <i class="icon-heart">♥</i>
+        <img src="images/s2.jpg" alt="Reebok Women Club C 85 W" />
+        <div class="product-details">
+          <p>CLASSIC SHOES</p>
+          <h4>Reebok Women Club C 85 W</h4>
+          <div class="product-price">₹6,999</div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <span class="new-label">I AM THE NEW</span>
+        <i class="icon-heart">♥</i>
+        <img src="images/s3.jpg"Reebok Women Energen Plus 2">
+        <div class="product-details">
+          <p>RUNNING SHOES</p>
+          <h4>Reebok Women Energen Plus 2</h4>
+          <div class="product-price">₹6,999</div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <span class="new-label">I AM THE NEW</span>
+        <i class="icon-heart">♥</i>
+        <img src="images/s4.jpg" alt="Reebok Unisex Classic Leather" />
+        <div class="product-details">
+          <p>CLASSIC SHOES</p>
+          <h4>Reebok Unisex Classic Leather</h4>
+          <div class="product-price">₹7,999</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
